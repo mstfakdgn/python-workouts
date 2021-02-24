@@ -34,3 +34,10 @@ pts = vertices.reshape((-1,1,2))
 cv2.polylines(blank_img, [pts], isClosed=True, color=(255,0,0), thickness=5)
 plt.imshow(blank_img)
 plt.show()
+
+vertices2 = np.array( [[350, 200], [200, 400], [500, 400]], dtype=np.int32)
+pts = vertices2.reshape((-1,1,2))
+
+cv2.fillPoly(blank_img, [pts], color=(255,0,0))
+plt.imshow(blank_img)
+plt.show()

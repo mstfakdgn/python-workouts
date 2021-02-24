@@ -26,3 +26,11 @@ plt.show()
 cv2.line(blank_img, pt1=(0,0), pt2=(512,512), color=(102,255,255), thickness=5)
 plt.imshow(blank_img)
 plt.show()
+
+vertices = np.array( [[250, 100], [100, 300], [400, 300]], dtype=np.int32)
+
+#add another dimension because of opencv
+pts = vertices.reshape((-1,1,2))
+cv2.polylines(blank_img, [pts], isClosed=True, color=(255,0,0), thickness=5)
+plt.imshow(blank_img)
+plt.show()

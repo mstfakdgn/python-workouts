@@ -66,6 +66,7 @@ while True:
         marker_image = np.zeros(road.shape[:2], dtype=np.int32)
         segments = np.zeros(road.shape, dtype=np.uint8)
 
+
     #update color choice
     elif k > 0 and chr(k).isdigit():
         current_marker = int(chr(k))

@@ -28,7 +28,7 @@ print(str(tracker).split()[0][1:], tracker)
 tracker_name = str(tracker).split()[0][1:]
 
 # Read video
-cap = cv2.VideoCapture('../DATA/video_capture.mp4')
+cap = cv2.VideoCapture('../DATA/dance.mp4')
 
 # Read first frame.
 ret, frame = cap.read()

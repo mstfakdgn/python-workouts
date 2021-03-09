@@ -12,7 +12,7 @@ plt.xlabel('time')
 plt.ylabel('amplitude')
 plt.show()
 
-
+#-
 
 # fft -> spectrum
 fft = np.fft.fft(signal)

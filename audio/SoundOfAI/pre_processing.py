@@ -2,7 +2,7 @@ import librosa, librosa.display
 import matplotlib.pyplot as plt
 import numpy as np
 
-file = './pre_processing_music2.wav'
+file = 'data/pre_processing_music2.wav'
 
 #waveform
 signal , sr = librosa.load(file, sr=22050) # sr * T ->22050 * 180
@@ -12,7 +12,7 @@ plt.xlabel('time')
 plt.ylabel('amplitude')
 plt.show()
 
-#-
+
 
 # fft -> spectrum
 fft = np.fft.fft(signal)

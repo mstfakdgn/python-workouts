@@ -1,6 +1,6 @@
 import requests
 
-URL = "http://127.0.0.1:5000/predict"
+URL = "http://127.0.0.1:5050/predict"
 TEST_AUDIO_FILE_TEST = "test/left.wav"
 
 if __name__ == "__main__":
@@ -11,7 +11,6 @@ if __name__ == "__main__":
     }
 
     response = requests.post(URL, files=values)
-
     data = response.json()
 
     print(f"Predicted Keyword is: {data['key']}")
